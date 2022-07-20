@@ -15,7 +15,7 @@ Projeto feito no curso da Alura de HTML e CSS: responsividade com mobile-first
 
 Projeto consistir em um layout para desktop do site da Alura Plus onde revisei muito conceitos de CSS e HTML e apredir novos tambem 
 
-![screenshot]() 
+![screenshot](https://github.com/wesleyLM/AluraBooks/blob/main/alura%20book.jpeg) 
 
 <b>Click the link below to watch the video: </b> https://www.awesomescreenshot.com/video/10073387?key=6e5b9f221cbb14dadaa00e9f45243845
  
