@@ -1,0 +1,127 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--cor-branca);
+}
+
+.cabecalho__menu-hamburguer{
+    border: none;
+
+    background-color: transparent;
+
+    padding: 1.4rem 1.2rem;
+
+    cursor: pointer;
+
+    font-size: 2rem;
+
+    color: var(--cor-azul-escuro);
+}
+
+.cabecalho__menu-ativo{
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branca);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.container__icone{
+    padding: 1.2rem;
+}
+
+.cabecalho__titulo{
+    display: none;
+
+    font-family: var(--font-secundaria);
+    font-size: 1.9rem;
+
+    margin-top: 10px;
+}
+
+.lista__menu{
+    display: none;
+}
+
+.container__texto{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .mobile__first-item{
+        display: none;
+    }
+
+    .cabecalho__titulo{
+        display: initial;
+        
+        font-weight: 400;
+
+        align-self: center;
+    }
+
+    .cabecalho__titulo-negrito{
+        font-weight: 700;
+    }
+
+    .cabecalho{
+        padding: 0 80px;
+    }
+
+    .lista__menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+
+        box-sizing: border-box;
+    }
+
+    .lista__menu-link{
+        color: var(--cor-preta);
+        font-weight: 400;
+
+        text-transform: uppercase;
+
+        padding: 10px;
+    }
+
+    .lista__menu-link:hover{
+        background: var(--cor-azul-gradiente);
+        color: var(--cor-branca);
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .container__icone-desktop{
+        display: flex;
+        align-items: center;
+    }
+
+    .container__texto{
+        font-size: 1.25rem;
+        color: var(--cor-preta);
+        display: initial;
+    }
+
+    .container__icone{
+        padding: 1.2rem .7rem;
+    }
+
+    .container__compras{
+        margin-right: 50px;
+    }
+
+    .lista__menu{
+        margin-right: auto;
+    }
+
+    .container{
+        margin-right: 57px;
+    }
+}

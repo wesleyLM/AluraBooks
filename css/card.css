@@ -1,0 +1,111 @@
+.card{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    
+    padding: 1rem;
+
+    margin: 1.25rem 1.5rem;
+
+    background: var(--cor-branca);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.card__2{
+    padding: 1.5rem 1rem;
+}
+
+.card__linha-superior{
+    display: flex;
+}
+
+.card__titulo-card{
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.card__titulo-livro{
+    color: var(--cor-azul-escuro);
+    font-weight: 700;
+
+    font-size: 1.2rem;
+
+    line-height: 27px;
+
+    margin: 0.5rem 0;
+}
+
+.card__texto{
+    font-size: 0.9rem;
+
+    line-height: 21px;
+}
+
+.card__linha-inferior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__link{
+    margin: 0.9rem;
+    display: inline-block;
+}
+
+.card__link-saiba-mais{
+    text-align: center;
+    
+    padding: 0.9rem 2.2rem;
+
+    font-weight: 700;
+
+    background-color: var(--cor-laranja);
+
+    color: var(--cor-branca);
+
+}
+
+.card__avaliacao-img{
+    margin-bottom: 0.5rem;
+}
+
+.card__img-autor{
+    margin-left: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.card__texto-autor{
+    padding-right: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card{
+        width: 45%;
+        margin: 0 auto 48px auto;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .card{
+        margin: 0;
+        width: 70vw;
+
+        align-self: flex-end;
+    }
+
+    .card__titulo-card{
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .card__texto{
+        padding-right: 8rem;
+    }
+
+    .card__img-autor{
+        margin: 0;
+    }
+}

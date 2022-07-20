@@ -1,0 +1,102 @@
+.contatos{
+    background-color: var(--cor-branca);
+    text-align: left;
+
+    padding: 1.5rem;
+}
+@media screen and (max-width: 1023px) {
+    .contatos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    
+        row-gap: 1rem;
+    
+    }
+}
+
+.contatos__titulo,
+.contatos__texto{
+    background: var(--cor-azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.contatos__titulo{
+    font-weight: 500;
+
+    font-size: 1.2rem;
+}
+
+.contatos__texto{
+    font-weight: 300;
+
+    line-height: 1.5rem;
+}
+
+.contatos__email{
+    border: 1px solid var(--cor-azul-escuro);
+    border-radius: 1.5rem;
+
+    padding: 0.8rem;
+
+    background: var(--cor-azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.contatos__email::placeholder{
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+
+    background: var(--cor-azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    padding-left: 3rem;
+    background: url(../img/Iconeemail.svg) no-repeat 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .contatos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: "titulo pesquisa"
+                    "texto espaco";
+
+        gap: 19px;
+
+        padding: 30px 149px;
+    }
+
+    .contatos__titulo{
+        grid-area: titulo;
+        font-size: 1.5rem;
+    }
+
+    .contatos__texto{
+        grid-area: texto;
+        font-size: 1rem;
+    }
+
+    .contatos__email{
+        grid-area: pesquisa;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .contatos{
+        column-gap: 19px;
+        row-gap: 0;
+        padding: 4rem 23vw;
+    }
+}
