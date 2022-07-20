@@ -17,7 +17,7 @@ Projeto consistir em um layout para desktop do site da Alura Plus onde revisei m
 
 ![screenshot]() 
 
-<b>Click the link below to watch the video: </b> 
+<b>Click the link below to watch the video: </b> https://www.awesomescreenshot.com/video/10073387?key=6e5b9f221cbb14dadaa00e9f45243845
  
 # Acesso ao projeto 
 
