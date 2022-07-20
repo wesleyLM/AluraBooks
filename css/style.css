@@ -26,6 +26,8 @@
 body{
     background-color: var(--cor-fundo);
     font-family: var(--font), sans-serif;
+    
+    overflow-x: hidden;
 }
 
 a{

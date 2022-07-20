@@ -1,5 +1,5 @@
 .menu {
-    width: 70vw;
+    width: 50vw;
 
     background-color: var(--cor-branca);
 
@@ -9,6 +9,8 @@
     left: -100%;
 
     transition: 1s;
+
+    z-index: 99;
 }
 
 .menu__ativo {
@@ -37,9 +39,6 @@
     text-transform: uppercase;
 }
 
-.menu__lista{
-    display: none;
-}
 
 .menu__tablet-ativo{
     background: var(--cor-azul-gradiente);
@@ -47,6 +46,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .menu__lista{
+        display: none;
+    }
+
     .menu__lista{
         position: absolute;
 
